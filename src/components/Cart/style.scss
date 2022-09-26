@@ -1,0 +1,44 @@
+@import 'constants/const-styles.scss';
+@import 'constants/media-queries.scss';
+
+.cart {
+    border-radius: 10px;
+    box-shadow: 0 3px $yellow, 0px 0 10px $gray;
+    margin: 0 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $primary;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+
+    &:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        transition: all 0.5s ease-out;
+    }
+
+    &__news {
+        margin: 20px 0;
+    }
+
+    &__preview {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    &__name {
+        font-size: 16px;
+        font-family: $vollkorn;
+        text-align: center;
+    }
+
+    &__img {
+        width: 50px;
+        margin: 5px;
+    }
+}

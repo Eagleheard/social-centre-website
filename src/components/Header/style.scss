@@ -1,0 +1,88 @@
+@import 'constants/const-styles.scss';
+@import 'constants/media-queries.scss';
+
+.header {
+  display: flex;
+  width: 100%;
+
+  @include media-mobile-small {
+    justify-content: space-around;
+  }
+
+  &__btn {
+    width: 40px;
+    display: none;
+    padding: 0;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__sign {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 30px;
+  }
+
+  &__login {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  .navbar {
+    background-color: $light-blue;
+    width: 100%;
+    padding: 30px 0;
+
+    &__item {
+      display: inline-block;
+      font-family: $vollkorn;
+    }
+
+    &__link {
+      color: $black;
+      padding: 0 30px;
+    }
+  }
+
+  &__select {
+    font-size: 18px;
+    color: $primary;
+  }
+
+  &__placeholder {
+    width: 100px;
+  }
+
+  &__select-menu {
+    color: $black;
+    width: 120px;
+  }
+
+  @include media-table-large {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    &__sign {
+      display: none;
+    }
+
+    &__btn {
+      display: block;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .autocomplete {
+      width: 50%;
+    }
+  }
+}

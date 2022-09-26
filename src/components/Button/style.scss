@@ -1,0 +1,28 @@
+@import 'constants/const-styles.scss';
+@import 'constants/media-queries.scss';
+
+.button {
+    align-self: center;
+    font-family: $vollkorn;
+    cursor: pointer;
+
+    &__about {
+        background-color: $primary;
+        border: 1px solid $secondary;
+        border-radius: 10px;
+        padding: 5px;
+        width: 100px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    &__contact {
+        background-color: $yellow;
+        border: 1px solid $yellow;
+        border-radius: 10px;
+        padding: 5px;
+        width: 200px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+}

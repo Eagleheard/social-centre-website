@@ -1,0 +1,57 @@
+@import 'constants/const-styles.scss';
+@import 'constants/media-queries.scss';
+
+.about {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: $light-blue;
+    padding: 20px 0;
+    margin-top: 100px;
+    border-radius: 0 0 200px 0;
+
+    &__container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    &__tips {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: $vollkorn;
+    }
+
+    &__news-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px 0;
+        font-family: $vollkorn;
+        width: 100%;
+    }
+
+    &__date {
+        margin-right: 30px;
+        width: 5%;
+    }
+    
+    &__news-label {
+        font-family: $vollkorn;
+        font-size: 20px;
+    }
+}
