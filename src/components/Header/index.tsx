@@ -11,7 +11,7 @@ export const Header = () => {
         <ul className="navbar__menu">
           <li className="navbar__item">
             <NavLink to="/" className="navbar__link  link">
-              Главная
+              Главная1
             </NavLink>
           </li>
           <li className="navbar__item">
